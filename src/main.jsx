@@ -6,27 +6,34 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Banner from './Components/Banner/Banner';
-import Featured from './Components/Featured/Featured';
-import Category from './Components/Category/Category';
+import Header from './Components/Header/Header';
+import Performance from './Components/Performance/Performance';
+import AppliedJob from './Components/AppliedJob/AppliedJob';
+import jobsAndStoredData from './Loaders/jobsAndStoredData';
+import JobDetails from './Components/JobDetails/JobDetails';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    loader: jobsAndStoredData,
     children: [
       {
         path: "/",
-        element: <Banner />
+        element: <Header />,
       },
       {
-        path: "/",
-        element: <Category />
+        path: "/performance",
+        element: <Performance />
       },
       {
-        path: "/",
-        element: <Featured />
+        path: "/enforced",
+        element: <AppliedJob />
       },
+      {
+        path: "/jobDetails",
+        element: <JobDetails />
+      }
     ]
   },
 ]);

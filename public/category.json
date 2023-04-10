@@ -1,0 +1,26 @@
+[
+        {
+        "id": "001",
+        "title": "Account & Finance",
+        "picture": "../src/assets/Icons/accounts 1.png",
+        "jobs": "300 Jobs Available"
+        },
+        {
+        "id": "002",
+        "title": "Network administrator",
+        "picture": "../src/assets/Icons/business 1.png",
+        "jobs": "100+ Jobs Available"
+        },
+        {
+        "id": "003",
+        "title": "Marketing & Sales",
+        "picture": "../src/assets/Icons/social-media 1.png",
+        "jobs": "150 Jobs Available"
+        },
+        {
+        "id": "004",
+        "title": "Engineering Job",
+        "picture": "../src/assets/Icons/chip 1.png",
+        "jobs": "300 Jobs Available"
+        }
+]

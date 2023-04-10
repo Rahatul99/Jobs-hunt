@@ -1,5 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLoaderData } from 'react-router-dom';
+import Banner from '../Banner/Banner';
 
 const Header = () => {
     return (
@@ -29,6 +30,7 @@ const Header = () => {
                     <a className="btn rounded-md bg-violet-400 border-none text-white">HOME</a>
                 </div>
             </div>
+            <Banner />
         </div>
     );
 };

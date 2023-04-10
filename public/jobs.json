@@ -1,0 +1,44 @@
+[
+    {
+    "id": "1",
+    "img": "../src/assets/All Images/google-1-1 1.png",
+    "designation": "Technical Database Engineer",
+    "company": "Google LLC",
+    "salary": "70k-90k"
+    },
+    {
+    "id": "2",
+    "img": "../src/assets/All Images/netflix-4 1.png",
+    "designation": "Senior Product Designer",
+    "company": "Netflix",
+    "salary": "60k-70k"
+    },
+    {
+    "id": "3",
+    "img": "../src/assets/All Images/tesla-9 1.png",
+    "designation": "Software Engineer",
+    "company": "Tesla",
+    "salary": "100k-150k"
+    },
+    {
+    "id": "4",
+    "img": "../src/assets/All Images/google-1-1 1.png",
+    "designation": "Technical Database Engineer",
+    "company": "Google LLC",
+    "salary": "70k-90k"
+    },
+    {
+    "id": "5",
+    "img": "../src/assets/All Images/google-1-1 1.png",
+    "designation": "IT coordinator",
+    "company": "Google LLC",
+    "salary": "90k-100k"
+    },
+    {
+    "id": "6",
+    "img": "../src/assets/All Images/netflix-4 1.png",
+    "designation": "Senior UI Artist",
+    "company": "Netflix",
+    "salary": "70k-80k"
+    }
+]

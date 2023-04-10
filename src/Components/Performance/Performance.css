@@ -1,0 +1,13 @@
+.navbar{
+    background-image: url('Vector-1.png');
+    height: 100px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+    background-position: 110%;
+}
+.nav-container{
+    background-image: url('Vector.png');
+    background-repeat: no-repeat;
+    background-position: -6%;
+}

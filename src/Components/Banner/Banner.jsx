@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import banner from '../../assets/All Images/Banner.png';
 import Featured from '../Featured/Featured';
 import Category from '../Category/Category';
+import { JobsContext } from '../../App';
 
 const Banner = () => {
+    // const jobs = useContext(JobsContext);
+    // console.log(jobs)
+    const jobs = useContext(JobsContext);
+    console.log('Allahoakbar',jobs)
+
+
+
+
+    const [categories, setCategory] = useState([]);
+    useEffect(() => {
+           fetch('category.json')
+          .then(response => response.json())
+          .then(data => setCategory(data))
+      }, []);
     return (
         <>
             <div className="card card-side bg-base-100 shadow-xl mt-5 md:flex-row flex-col">
@@ -19,12 +34,30 @@ const Banner = () => {
                 <div><img src={banner} alt="Banner"/></div>
             </div>
 
-            <div>
-                <Category />
+
+
+            <div className='mt-10'>
+                <div className='text-center'>
+                    <h1 className='font-bold text-3xl '>Entry-Level Positions Available</h1>
+                    <p className='pt-2'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                </div>
+                <div className='flex md:flex-row flex-col items-center justify-center gap-3 pt-5'>
+                {
+                    categories.map(category => <Category category={category} key={category.id} />)
+                }
+                </div>   
             </div>
-            <div className='m-10'>
-                <Featured></Featured>
+
+
+
+
+            <div className="grid md:grid-cols-2 justify-items-center gap-5 mt-5 mb-5">
+                {
+                    jobs.map(job => <Featured job={job} key={job.id} />)
+                }
             </div>
+
+            
         </>
     );
 };
