@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 
 const Featured = ({job}) => {
@@ -27,7 +27,7 @@ const Featured = ({job}) => {
                         </svg>
                         <small>Salary: {salary}</small></p>
                     </div>
-                    <Link to='/jobDetails' onClick={()=>loadDetails(job)}>
+                    <Link to={`/jobDetails/${id}`}>
                         <div className="card-actions justify-start">
                             <button className="btn btn-primary rounded-sm w-[40%] min-h-0 h-10 bg-violet-400 text-white border-none">View Details</button>
                         </div>    
