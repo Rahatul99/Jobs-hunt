@@ -1,8 +1,56 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Performance.css';
 
+import {
+    ComposedChart,
+    Line,
+    Area,
+    Bar,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Tooltip,
+    Legend,
+    ResponsiveContainer,
+  } from 'recharts';
+
 const Performance = () => {
+    const data = [
+        {
+          name: "Assignment 1",
+          marks: 58
+        },
+        {
+          name: "Assignment 2",
+          marks: 57
+        },
+        {
+          name: "Assignment 3",
+          marks: 58
+        },
+        {
+          name: "Assignment 4",
+          marks: 53
+        },
+        {
+          name: "Assignment 5",
+          marks: 58
+        },
+        {
+          name: "Assignment 6",
+          marks: 60
+      
+        },
+        {
+          name: "Assignment 7",
+          marks: 60
+        },
+        {
+          name: "Assignment 8",
+          marks: 60
+        }
+      ];
     return (
         <>
         <div>
@@ -29,7 +77,8 @@ const Performance = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <a className="btn rounded-md bg-violet-400 border-none text-white">HOME</a>
+                        {/* <a className="btn rounded-md bg-violet-400 border-none text-white">HOME</a> */}
+                        <Link to={"/"} className="btn rounded-md bg-violet-400 border-none text-white">HOME</Link>
                     </div>
                 </div>
                 <div className='text-center p-5'>
@@ -37,6 +86,31 @@ const Performance = () => {
                 </div>
             </div>
         </div>
+
+    <div style={{ width: "100%", height: 300 }}>
+      <ResponsiveContainer>
+        <ComposedChart
+          width={500}
+          height={400}
+          data={data}
+          margin={{
+            top: 20,
+            right: 20,
+            bottom: 20,
+            left: 20
+          }}
+        >
+          <CartesianGrid stroke="#f5f5f5" />
+          <XAxis dataKey="name" scale="band" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Area type="monotone" dataKey="marks" fill="#8884d8" stroke="#8884d8" />
+          <Bar dataKey="marks" barSize={20} fill="#413ea0" />
+          <Line type="monotone" dataKey="marks" stroke="#ff7300" />
+        </ComposedChart>
+      </ResponsiveContainer>
+    </div>
         </>
     );
 };

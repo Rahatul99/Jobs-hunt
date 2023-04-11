@@ -3,15 +3,10 @@ import banner from '../../assets/All Images/Banner.png';
 import Featured from '../Featured/Featured';
 import Category from '../Category/Category';
 import { JobsContext } from '../../App';
+import Header from '../Header/Header';
 
 const Banner = () => {
-    // const jobs = useContext(JobsContext);
-    // console.log(jobs)
     const jobs = useContext(JobsContext);
-    console.log('Allahoakbar',jobs)
-
-
-
 
     const [categories, setCategory] = useState([]);
     useEffect(() => {

@@ -11,11 +11,14 @@ import Performance from './Components/Performance/Performance';
 import AppliedJob from './Components/AppliedJob/AppliedJob';
 import jobsAndStoredData from './Loaders/jobsAndStoredData';
 import JobDetails from './Components/JobDetails/JobDetails';
+import ErrorPage from './Components/errorPage';
+import Journal from './Components/Journal';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     loader: jobsAndStoredData,
     children: [
       {
@@ -34,6 +37,10 @@ const router = createBrowserRouter([
         path: "/jobDetails/:id",
         element: <JobDetails />,
         loader: ({params}) => fetch('/jobs.json')
+      },
+      {
+        path: "journal",
+        element: <Journal />
       }
     ]
   },

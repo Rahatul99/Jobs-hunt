@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-
 const Featured = ({job}) => {
     const {img, designation, company, salary, id, jobType, location} = job;
 
@@ -29,7 +28,8 @@ const Featured = ({job}) => {
                     </div>
                     <Link to={`/jobDetails/${id}`}>
                         <div className="card-actions justify-start">
-                            <button className="btn btn-primary rounded-sm w-[40%] min-h-0 h-10 bg-violet-400 text-white border-none">View Details</button>
+                            <button className="btn btn-primary rounded-sm w-[40%] min-h-0 h-10 bg-violet-400 text-white border-none">View Details
+                            </button>
                         </div>    
                     </Link>
                     </div>

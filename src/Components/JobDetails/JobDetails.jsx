@@ -1,31 +1,12 @@
-// import React, { useState } from 'react';
-// import { useLoaderData, useParams } from 'react-router-dom';
-
-// const JobDetails = () => {
-//     const [job, setJob] = useState({})
-//     const { id } = useParams();
-//     const jobs = useLoaderData();
-//     console.log(data)
-//     console.log(id)
-//     return (
-//         <div>
-//             <h2>Hello from job detail</h2>
-//         </div>
-//     );
-// };
-
-// export default JobDetails;
-
-
 import React, { useState, useEffect } from 'react';
-import { NavLink, useLoaderData, useParams } from 'react-router-dom';
+import { Link, NavLink, useLoaderData, useParams } from 'react-router-dom';
+import { addToDb } from '../../Utilities/fakeDB';
+
 
 const JobDetails = () => {
     const [job, setJob] = useState({});
     const { id } = useParams();
-    console.log(id)
     const jobs = useLoaderData();
-    console.log(jobs)
 
     useEffect(() => {
         const getJob = async () => {
@@ -63,7 +44,7 @@ const JobDetails = () => {
                             </ul>
                         </div>
                         <div className="navbar-end">
-                            <a className="btn rounded-md bg-violet-400 border-none text-white">HOME</a>
+                        <Link to={"/"} className="btn rounded-md bg-violet-400 border-none text-white">HOME</Link>
                         </div>
                     </div>
                     <div className='text-center p-5'>
@@ -126,10 +107,8 @@ const JobDetails = () => {
                         <p>Location:</p></span> <span className='pl-1'>{location}</span></div>
 
                     </div>
-                    <button className="btn p-4 w-80 bg-violet-500 rounded text-base-content mt-5 text-white">
+                    <button onClick={() =>addToDb(id)} className="btn p-4 w-80 bg-violet-500 rounded text-base-content mt-5 text-white">
                     Apply Now
-                        {/* <li className='text-blue-900 text-center font-bold'>Spent time on read:
-                        </li> */}
                     </button>
                 </div>
             </div>

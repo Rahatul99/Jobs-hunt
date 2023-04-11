@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link, NavLink, useLoaderData } from 'react-router-dom';
-import Banner from '../Banner/Banner';
+import Header from './Header/Header';
+import { Link, NavLink } from 'react-router-dom';
 
-const Header = () => {
+const Journal = () => {
     return (
         <div>
             <div className="navbar bg-base-100">
@@ -30,9 +30,18 @@ const Header = () => {
                     <Link to={"/"} className="btn rounded-md bg-violet-400 border-none text-white">HOME</Link>
                 </div>
             </div>
-            <Banner />
+
+
+            <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div className="collapse-title text-xl font-medium">
+                    Focus me to see content
+                </div>
+                <div className="collapse-content">
+                    <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+                </div>
+            </div>
         </div>
     );
 };
 
-export default Header;
+export default Journal;
