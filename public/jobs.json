@@ -4,41 +4,89 @@
     "img": "../src/assets/All Images/google-1-1 1.png",
     "designation": "Technical Database Engineer",
     "company": "Google LLC",
-    "salary": "70k-90k"
+    "salary": "70k-90k",
+    "jobType": "remote",
+    "location": "California Los Angeles",
+    "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+    "responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+    "requirements": "Bachelor degree to complete any reputational university.",
+    "experiences": "2-3 Years in this field.",
+    "mail": "info@gmail.com",
+    "phone": "(415) 555-2671"
     },
     {
     "id": "2",
     "img": "../src/assets/All Images/netflix-4 1.png",
     "designation": "Senior Product Designer",
     "company": "Netflix",
-    "salary": "60k-70k"
+    "salary": "60k-70k",
+    "jobType": "onsite",
+    "location": "Buffalo Los Angeles",
+    "description": "A Senior Product Designer is a professional who is responsible for creating and designing innovative and user-friendly products that meet the needs and expectations of customers. They work closely with cross-functional teams, including engineers, marketers, and project managers, to develop and execute product designs from concept to launch. Senior Product Designers typically have extensive experience in design, user research, prototyping.",
+    "responsibility": "Leading the product design process from ideation to launch, ensuring that the product meets customer needs, business goals, and design standards.Conducting user research, gathering insights, and analyzing data to inform the design process and make data-driven decisions.Creating wireframes, prototypes, and visual designs that are intuitive, engaging, and visually appealing.",
+    "requirements": "Bachelor degree to complete any reputational university.",
+    "experiences": "1-2 Years in this field.",
+    "mail": "info@gmail.com",
+    "phone": "(415) 555-2677"
     },
     {
     "id": "3",
     "img": "../src/assets/All Images/tesla-9 1.png",
     "designation": "Software Engineer",
     "company": "Tesla",
-    "salary": "100k-150k"
+    "salary": "100k-150k",
+    "jobType": "onsite",
+    "location": "Wake Forest,NC",
+    "description": "A Software Engineer is a professional who designs, develops, and maintains software applications and systems. They work with computer programming languages, algorithms, and data structures to create software that meets user requirements and solves complex problems. Software Engineers typically work in teams with other developers, testers, and project managers to design, build, test, and deploy software solutions. They also stay up-to-date with the latest programming languages, tools, and frameworks to ensure that their software is scalable, efficient, and secure. Software Engineers work across a variety of industries, including technology, healthcare, finance, and gaming.",
+    "responsibility": "As a Software Engineer, you will be responsible for designing, developing, and maintaining software applications and systems. Your primary focus will be on analyzing user requirements and creating software solutions that meet their needs. You will be expected to have a strong understanding of computer programming languages, algorithms, and data structures in order to create efficient and effective software solutions.",
+    "requirements": "Bachelor degree to complete any reputational university.",
+    "experiences": "4-5 Years in this field.",
+    "mail": "info@gmail.com",
+    "phone": "(415) 555-2676"
     },
     {
     "id": "4",
     "img": "../src/assets/All Images/google-1-1 1.png",
     "designation": "Technical Database Engineer",
     "company": "Google LLC",
-    "salary": "70k-90k"
+    "salary": "70k-90k",
+    "jobType": "remote",
+    "location": "Governors Trace,Peachtree City",
+    "description": "A Technical Database Engineer is a professional who is responsible for designing, developing, and maintaining databases and database management systems. They are experts in database architecture, data modeling, and performance optimization, and they use their technical skills to ensure that databases are efficient, secure, and scalable. Technical Database Engineers work with various database technologies, including relational databases such as MySQL, Oracle, and SQL Server, and NoSQL databases such as MongoDB, Cassandra, and Hadoop.",
+    "responsibility": "Designing and implementing database solutions that meet business needs and support application development. This involves working closely with software developers, system administrators, and data analysts to ensure that databases are integrated with other systems and applications.Monitoring database performance, troubleshooting issues, and implementing performance tuning strategies to improve database efficiency. This requires a deep understanding of database architecture, data modeling, and performance optimization.",
+    "requirements": "Bachelor degree to complete any reputational university.",
+    "experiences": "2-3 Years in this field.",
+    "mail": "info@gmail.com",
+    "phone": "(415) 555-2623"
     },
     {
     "id": "5",
     "img": "../src/assets/All Images/google-1-1 1.png",
     "designation": "IT coordinator",
     "company": "Google LLC",
-    "salary": "90k-100k"
+    "salary": "90k-100k",
+    "jobType": "remote",
+    "location": "Vineland Ave Suite, US",
+    "description": "An IT Coordinator is a professional who is responsible for managing and coordinating information technology (IT) operations within an organization. Their primary role is to ensure that the organization's IT infrastructure is functioning efficiently and effectively, and that all users have the tools and resources they need to perform their jobs.In this role, IT Coordinators work closely with other IT professionals, such as network administrators, system analysts, and support staff, to manage the organization's IT systems and infrastructure. They oversee the installation and maintenance of hardware and software, manage user accounts and permissions, and ensure that all systems are backed up and secure",
+    "responsibility": "Managing and maintaining the organization's IT systems and infrastructure, including hardware, software, and network components.Coordinating and managing IT projects, such as system upgrades and new software implementations, ensuring that projects are completed on time and within budget.Providing technical support to users within the organization, troubleshooting issues, answering questions, and providing training on software and hardware tools.",
+    "requirements": "Bachelor degree to complete any reputational university.",
+    "experiences": "5-7 Years in this field.",
+    "mail": "info@gmail.com",
+    "phone": "(415) 555-2699"
     },
     {
     "id": "6",
     "img": "../src/assets/All Images/netflix-4 1.png",
     "designation": "Senior UI Artist",
     "company": "Netflix",
-    "salary": "70k-80k"
+    "salary": "70k-80k",
+    "jobType": "onsite",
+    "location": "Camino Plaza Suite,San Diego",
+    "description": "A Senior UI Artist is a professional who is responsible for creating visually appealing and intuitive user interfaces (UIs) for video games, mobile applications, websites, and other digital products. They are experts in design, layout, typography, and color theory, and use their skills to create interfaces that are easy to use and visually engaging.In this role, Senior UI Artists work closely with game designers, programmers, and other artists to develop UI concepts, wireframes, and prototypes. They create final UI designs, icons, and animations, and ensure that all elements are consistent with the overall art style and brand of the product.",
+    "responsibility": "Creating visually appealing and intuitive UI designs for video games, mobile applications, websites, and other digital products.Collaborating with game designers, programmers, and other artists to develop UI concepts, wireframes, and prototypes that are consistent with the overall art style and brand of the product.",
+    "requirements": "Bachelor degree to complete any reputational university.",
+    "experiences": "4-5 Years in this field.",
+    "mail": "info@gmail.com",
+    "phone": "(415) 555-5656"
     }
 ]
