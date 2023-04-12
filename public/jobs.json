@@ -1,7 +1,7 @@
 [
     {
     "id": "1",
-    "img": "../src/assets/All Images/google-1-1 1.png",
+    "img": "https://images.unsplash.com/photo-1662947190722-5d272f82a526?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80",
     "designation": "Technical Database Engineer",
     "company": "Google LLC",
     "salary": "70k-90k",
@@ -16,7 +16,7 @@
     },
     {
     "id": "2",
-    "img": "../src/assets/All Images/netflix-4 1.png",
+    "img": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
     "designation": "Senior Product Designer",
     "company": "Netflix",
     "salary": "60k-70k",
@@ -31,7 +31,7 @@
     },
     {
     "id": "3",
-    "img": "../src/assets/All Images/tesla-9 1.png",
+    "img": "https://images.unsplash.com/photo-1612810806695-30f7a8258391?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=",
     "designation": "Software Engineer",
     "company": "Tesla",
     "salary": "100k-150k",
@@ -46,7 +46,7 @@
     },
     {
     "id": "4",
-    "img": "../src/assets/All Images/google-1-1 1.png",
+    "img": "https://images.unsplash.com/photo-1621768216002-5ac171876625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80",
     "designation": "Technical Database Engineer",
     "company": "Google LLC",
     "salary": "70k-90k",
@@ -61,7 +61,7 @@
     },
     {
     "id": "5",
-    "img": "../src/assets/All Images/google-1-1 1.png",
+    "img": "https://images.unsplash.com/photo-1662947036644-ecfde1221ac7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80",
     "designation": "IT coordinator",
     "company": "Google LLC",
     "salary": "90k-100k",
@@ -76,7 +76,7 @@
     },
     {
     "id": "6",
-    "img": "../src/assets/All Images/netflix-4 1.png",
+    "img": "https://images.unsplash.com/photo-1661953118591-2f5be524698e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1154&q=80",
     "designation": "Senior UI Artist",
     "company": "Netflix",
     "salary": "70k-80k",

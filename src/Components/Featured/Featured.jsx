@@ -13,7 +13,7 @@ const Featured = () => {
   return (
     <>
       {slice.map((job) => (
-        <div key={job.id} className='card min-w-0 h-[100%] w-[80%] bg-base-100 shadow-xl p-5'>
+        <div key={job.id} className='card min-w-0 h-[80%] w-[80%] bg-base-100 shadow-xl p-5'>
           <figure><img src={job.img} alt="Shoes" /></figure>
           <div className="card-body">
             <h2 className="card-title">{job.designation}</h2>

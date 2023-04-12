@@ -77,7 +77,7 @@ const AppliedJob = () => {
 
 
 
-<div className='grid justify-center gap-5  mt-5 mb-5'>
+<div className='grid justify-center gap-5  mt-5 mb-5 w-[50%]'>
 {cart.map((job, index) => (<div key={index}
 className='card card-side bg-base-100 shadow-xl p-5'
 >
