@@ -1,12 +1,14 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import banner from '../../assets/All Images/Banner.png';
 import Featured from '../Featured/Featured';
 import Category from '../Category/Category';
-import { JobsContext } from '../../App';
-import Header from '../Header/Header';
+// import { JobsContext } from '../../App';
+import { useState } from 'react';
+import { useEffect } from 'react';
+// import Header from '../Header/Header';
 
 const Banner = () => {
-    const jobs = useContext(JobsContext);
+    // const jobs = useContext(JobsContext);
 
     const [categories, setCategory] = useState([]);
     useEffect(() => {
@@ -43,18 +45,13 @@ const Banner = () => {
                 </div>   
             </div>
 
-
-
-
             <div className="grid md:grid-cols-2 justify-items-center gap-5 mt-5 mb-5">
-                     {
+                     {/* {
                      jobs.map(job => <Featured job={job} key={job.id} />)
-                     }
+                     } */}
+                     <Featured />
             </div>
                     
-            {/* </div> */}
-
-            
         </>
     );
 };
