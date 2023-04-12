@@ -29,19 +29,6 @@ const AppliedJob = () => {
     }
     jobsAndStoredData()
 
-
-
-
-    // const [remote, setRemote] = useState(cart);
-
-    // const remoteSort = () => {
-    //   const sortedRemote = cart.filter((item) => item.jobType === "someJobType");
-    //   setCart(sortedRemote);
-    // };
-    // console.log(cart)
-    
-
-
     return (
         <>
         <div>

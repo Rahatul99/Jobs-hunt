@@ -1,7 +1,6 @@
 import { json } from "react-router-dom";
 
 
-// add data local store
 const addToDb = id =>{
     let appliedJob = {};
     
@@ -30,8 +29,7 @@ const getStoredJob = () =>{
     }
     return appliedJob
 }
-
-// remove a specific element from loacl storage 
+ 
 const removeFromDb = id =>{
     const storedJob = localStorage.getItem('applied-job');
     if(storedJob){
@@ -43,7 +41,6 @@ const removeFromDb = id =>{
     }
 }
 
-//clear all data from local storage
 const deleteStoredJob = () => localStorage.removeItem('shopping-cart')
 
 export { addToDb, getStoredJob, removeFromDb, deleteStoredJob }

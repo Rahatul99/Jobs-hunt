@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink, useLoaderData } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Banner from '../Banner/Banner';
 
 const Header = () => {

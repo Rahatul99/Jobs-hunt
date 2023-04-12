@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import banner from '../../assets/All Images/Banner.png';
 import Featured from '../Featured/Featured';
 import Category from '../Category/Category';
