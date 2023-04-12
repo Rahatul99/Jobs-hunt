@@ -34,7 +34,45 @@ const Journal = () => {
 
 
 
-
+            <div>
+            <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div className="collapse-title text-xl font-medium">
+                    <h1 className='font-extrabold text-xl'>When should i use context api</h1>
+                </div>
+                <div className="collapse-content">
+                    <p>When i have a lot of props being passed down the component tree: If i have a lot of props being passed down through multiple levels of components, using the Context API can help simplify my code and make it easier to manage.</p>
+                </div>
+            </div>
+            <div tabIndex={1} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div className="collapse-title text-xl font-medium">
+                    <h1 className='font-extrabold text-xl'>What is custom hook</h1>
+                </div>
+                <div className="collapse-content">
+                    <p>A React custom hook is a reusable piece of code that uses one or more of React's built-in hooks to provide some functionality that can be shared across multiple components in application.
+                    Custom hooks are created by defining a function that starts with the word "use" and utilizes one or more of the built-in hooks such as useState, useEffect, or useContext, as well as potentially other custom hooks.
+                    ***
+                    To use a custom hook,simply call it like any other hook within functional component. This helps keep code DRY (Don't Repeat Yourself) and can make it easier to maintain over time.
+                    </p>
+                </div>
+            </div>
+            <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div className="collapse-title text-xl font-medium">
+                    <h1 className='font-extrabold text-xl'>What is useRef, usage of useRef. what is useMemo?</h1>
+                </div>
+                <div className="collapse-content">
+                    <p>the useRef hook is a way to create a mutable reference to a value that persists across component renders and can be used to access and manipulate DOM elements or other mutable values in a functional component without triggering a re-render.
+                    </p>
+                </div>
+            </div>
+            <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div className="collapse-title text-xl font-medium">
+                    <h1 className='font-extrabold text-xl'>What is useMemo?</h1>
+                </div>
+                <div className="collapse-content">
+                    <p>The basic idea behind useMemo is that it will only recompute a memoized value when one of its dependencies has changed. This means that if the dependencies of the memoized value have not changed, React will return the previously calculated value, rather than recomputing it.</p>
+                </div>
+            </div>
+            </div>
         </div>
     );
 };

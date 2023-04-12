@@ -2,13 +2,10 @@ import React, { useContext } from 'react';
 import banner from '../../assets/All Images/Banner.png';
 import Featured from '../Featured/Featured';
 import Category from '../Category/Category';
-// import { JobsContext } from '../../App';
 import { useState } from 'react';
 import { useEffect } from 'react';
-// import Header from '../Header/Header';
 
 const Banner = () => {
-    // const jobs = useContext(JobsContext);
 
     const [categories, setCategory] = useState([]);
     useEffect(() => {
@@ -23,7 +20,6 @@ const Banner = () => {
                     <h2 className="card-title font-extrabold md:text-6xl text-3xl">Unlock Your Career <br /> Potential,Discover Your</h2>
                     <h2 className='text-blue-300 font-extrabold md:text-6xl text-3xl'>Dream Job Today!</h2>
                     <p className='pt-5 flex-grow-0'>Explore thousands of job opportunities with all the information you need.<br />Its your future. Come find it. Manage all your job application from start to finish.</p>
-                    {/* <button className="btn btn-primary">Watch</button> */}
                     <div className="justify-start">
                     <button className="btn btn-primary rounded-md bg-violet-400 text-white">Take Tour</button>
                     </div>
@@ -46,9 +42,6 @@ const Banner = () => {
             </div>
 
             <div className="grid md:grid-cols-2 justify-items-center gap-5 mt-5 mb-5">
-                     {/* {
-                     jobs.map(job => <Featured job={job} key={job.id} />)
-                     } */}
                      <Featured />
             </div>
                     

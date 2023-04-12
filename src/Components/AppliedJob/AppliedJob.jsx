@@ -29,6 +29,19 @@ const AppliedJob = () => {
     }
     jobsAndStoredData()
 
+
+
+
+    // const [remote, setRemote] = useState(cart);
+
+    // const remoteSort = () => {
+    //   const sortedRemote = cart.filter((item) => item.jobType === "someJobType");
+    //   setCart(sortedRemote);
+    // };
+    // console.log(cart)
+    
+
+
     return (
         <>
         <div>
@@ -63,16 +76,16 @@ const AppliedJob = () => {
                 </div>
             </div>
 
-
-            <div className='flex justify-end w-[67%] pt-5'>
-            <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box w-[20%]">
-            <div className="collapse-title text-xl font-medium">
-            </div>
-            <div className="collapse-content">
-                <button className='btn'>hello</button>
-                <button className='btn'>hi</button>
-            </div>
-            </div>
+            <div className='sort-data'>
+                <form action='#'>
+                    <label htmlFor="sort">
+                    </label>
+                    <select name='sort' id='sort'>
+                        <option value="remote" onClick={() => remoteSort()}>Remote</option>
+                        <br />
+                        <option value="onsite">Onsite</option>
+                    </select>
+                </form>
             </div>
 
 
