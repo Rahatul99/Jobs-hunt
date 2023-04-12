@@ -47,10 +47,12 @@ const Banner = () => {
 
 
             <div className="grid md:grid-cols-2 justify-items-center gap-5 mt-5 mb-5">
-                {
-                    jobs.map(job => <Featured job={job} key={job.id} />)
-                }
+                     {
+                     jobs.map(job => <Featured job={job} key={job.id} />)
+                     }
             </div>
+                    
+            {/* </div> */}
 
             
         </>

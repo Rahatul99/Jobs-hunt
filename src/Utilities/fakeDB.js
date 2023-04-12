@@ -1,5 +1,6 @@
 import { json } from "react-router-dom";
 
+
 // add data local store
 const addToDb = id =>{
     let appliedJob = {};

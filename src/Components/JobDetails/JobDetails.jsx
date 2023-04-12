@@ -15,7 +15,9 @@ const JobDetails = () => {
         };
         getJob();
     }, []);
-    
+    if(!job.id){
+        return null
+    }
     const {description, responsibility, requirements, experiences, mail, phone, salary, designation, location} = job;
 
     return (

@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 const Featured = ({job}) => {
+    // const [showAll, setShowAll] = useState(false);
+    // const toggleShowAll = () => {
+    //     setShowAll(!showAll);
+    // };
     const {img, designation, company, salary, id, jobType, location} = job;
 
     return (
@@ -33,7 +37,7 @@ const Featured = ({job}) => {
                         </div>    
                     </Link>
                     </div>
-                </div>    
+                </div>   
         </>
     );
 };

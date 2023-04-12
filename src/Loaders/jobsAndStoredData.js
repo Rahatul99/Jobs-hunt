@@ -1,7 +1,7 @@
 import { getStoredJob } from "../Utilities/fakeDB";
 
 const jobsAndStoredData = async() =>{
-    const jobsData = await fetch('jobs.json');
+    const jobsData = await fetch('/jobs.json');
     const jobs = await jobsData.json();
     const savedJob = getStoredJob();
 

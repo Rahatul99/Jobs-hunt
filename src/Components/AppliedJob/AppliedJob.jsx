@@ -1,11 +1,34 @@
-import { useContext } from 'react';
 import './AppliedJob.css';
 import { Link, NavLink } from 'react-router-dom';
-import { CartContext } from '../../App';
-
+import { useState } from 'react';
 
 const AppliedJob = () => {
-    const [ cart, setCart ] = useContext(CartContext)
+    const [cart, setCart] = useState([]);
+
+
+    let appliedJob = {}
+    const storedJob = localStorage.getItem('applied-job');
+    if(storedJob){
+        appliedJob = JSON.parse(storedJob);
+    }
+    const jobsAndStoredData = async() =>{
+        const jobsData = await fetch('/jobs.json');
+        const jobs = await jobsData.json();
+        const savedJob = appliedJob;
+    
+        let jobArray = [];
+    
+        for(const id in savedJob){
+            const foundJob = jobs.find(job => job.id === id);
+            if(foundJob){
+                foundJob.quantity = savedJob[id];
+                jobArray.push(foundJob); 
+            }
+        }
+        setCart(jobArray)
+    }
+    jobsAndStoredData()
+
     return (
         <>
         <div>
@@ -39,11 +62,25 @@ const AppliedJob = () => {
                     <p className='font-semibold text-2xl'>Enforced Jobs</p>
                 </div>
             </div>
+
+
+            <div className='flex justify-end w-[67%] pt-5'>
+            <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box w-[20%]">
+            <div className="collapse-title text-xl font-medium">
+            </div>
+            <div className="collapse-content">
+                <button className='btn'>hello</button>
+                <button className='btn'>hi</button>
+            </div>
+            </div>
+            </div>
+
+
+
 <div className='grid justify-center gap-5  mt-5 mb-5'>
 {cart.map((job, index) => (<div key={index}
 className='card card-side bg-base-100 shadow-xl p-5'
 >
-
                 <figure><img src={job.img} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{job.designation}</h2>
@@ -73,3 +110,4 @@ className='card card-side bg-base-100 shadow-xl p-5'
 };
 
 export default AppliedJob;
+

@@ -9,7 +9,7 @@ export const CartContext = createContext([]);
 const App = ()=> {
   const {jobArray, jobs} = useLoaderData();
   const [cart, setCart] = useState(jobArray);
-  
+
   return (
     <>
       <JobsContext.Provider value={jobs}>
